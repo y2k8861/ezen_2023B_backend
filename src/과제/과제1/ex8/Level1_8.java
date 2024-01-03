@@ -12,7 +12,7 @@ public class Level1_8 {
 		
 		String header = "\n============방문록===============\n번호\t 작성자 \t 방문록\n";
 		String boardlist = "";
-		String footer = "================================\n";
+		String footer = "================================\n\n";
 		String output = "";
 		
 		/* 문제풀이 위치 */
