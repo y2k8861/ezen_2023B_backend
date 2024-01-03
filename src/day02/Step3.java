@@ -79,3 +79,5 @@ public class Step3 {    // c S
         1. 기본타입(int, double, float 등 소문자.)
         2. 참조타입(String, Scanner, System, Integer 등등)
 */
+
+testst
