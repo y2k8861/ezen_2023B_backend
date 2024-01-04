@@ -40,7 +40,8 @@ public class Level1_7 {
 		System.out.print("몸무게 double : ");
 		double inD = scanner.nextDouble();
 
-		output += "===========회원 개인정보===============";
+
+        output += "===========회원 개인정보===============";
 		System.out.println(output);
 		System.out.printf("%-10s%-21s\t|","|","회원명 : " + inS);
 		System.out.printf("\n%-10s%-21s\t|","|","상태 : " + inByte);
