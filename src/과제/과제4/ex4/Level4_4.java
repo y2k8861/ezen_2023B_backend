@@ -23,7 +23,7 @@ public class Level4_4 {
 			int ch = scanner.nextInt();
 			/* ----------- */
 			if(ch == 1){
-				x++;
+				if(!(x >= 4)){x++;}
 				for(int i = 0; i<X_AXIS.length; i++){
 					if(i != x){
 						X_AXIS[i] = null;
@@ -32,7 +32,7 @@ public class Level4_4 {
 					}
 				}
 			} else if(ch == 2){
-				x--;
+				if(!(x <= 0)){x--;}
 				for(int i = 0; i<X_AXIS.length; i++){
 					if(i != x){
 						X_AXIS[i] = null;
