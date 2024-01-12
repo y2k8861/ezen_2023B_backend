@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Step2 {
     public static void main(String[] args) {
-//        Account[] account = new Account[100];
-        Account[] account = {new Account("111-111","일승호",15000),new Account("222-222","이승호",30000),new Account("333-333","삼승호",10000)};
+        Account[] account = new Account[100];
+//        Account[] account = {new Account("111-111","일승호",15000),new Account("222-222","이승호",30000),new Account("333-333","삼승호",10000)};
         Scanner scanner = new Scanner(System.in);
 
         while (true){
