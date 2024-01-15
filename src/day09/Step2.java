@@ -53,11 +53,17 @@ public class Step2 {
 
                 System.out.print("계좌번호 : "); String accountNumber = scanner.nextLine();
                 System.out.print("예금액 : "); String accountPlusMonney = scanner.nextLine();
+                boolean a = false;
                 for(int i = 0; i<account.length; i++){
                     if(account[i].accountNumber.equals(accountNumber)){
                         account[i].accountPlus(accountPlusMonney);
                         break;
                     }
+                    a = true;
+                }
+
+                if(a){
+                    System.out.println("일치하는 계좌정보가 없습니다.");
                 }
 
 
@@ -69,11 +75,16 @@ public class Step2 {
 
                 System.out.print("계좌번호 : "); String accountNumber = scanner.nextLine();
                 System.out.print("출금액 : "); String accountMinustMoney = scanner.nextLine();
+                boolean a = false;
                 for(int i = 0; i<account.length; i++){
                     if(account[i].accountNumber.equals(accountNumber)){
                         account[i].accountMinus(accountMinustMoney);
                         break;
                     }
+                    a = true;
+                }
+                if(a){
+                    System.out.println("일치하는 계좌정보가 없습니다.");
                 }
 
             } else if(ch.equals("5")){
