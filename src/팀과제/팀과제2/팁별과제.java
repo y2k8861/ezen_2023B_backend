@@ -66,7 +66,7 @@ public class 팁별과제 {
                 if (i.ssno == myMember.ssno) {
                     System.out.println("구독 번호 : " + i.ssno);
                     System.out.println("구독 타입 : " + i.type.type);
-                    System.out.println("구독 가격 월/"+ i.type.price);
+                    System.out.println("구독 가격 : "+ i.type.price + "/월");
                     System.out.println("구독한 개월 : " + i.month);
                     break;
                 }
@@ -89,16 +89,17 @@ public class 팁별과제 {
             int i = 1;
             while (i<4){
                 boolean run2 = false;
+                boolean run3 = false;
                 System.out.println("함께 구독할"+i+"번 아이디를 입력해주세요.");
                 String withId = scanner.next();
                 for (Member j : members) {
-                    
                     if (j.id.equals(withId)) {
                         userId[i] = j.mno;
                         i++;
+                        run2 = false;
                         break;
                     }
-                    run =true;
+                    run2 =true;
                 }
                 if(run2){
                     System.out.println("일치하는 아이디가 없습니다.");
@@ -112,7 +113,9 @@ public class 팁별과제 {
         myMember.ssno = subscribe.ssno;
     }
 
-    static void 기간연장(){}
+    static void 기간연장(){
+
+    }
     public static void main(String[] args) {
         while (true){
             System.out.println("------------------------------");
