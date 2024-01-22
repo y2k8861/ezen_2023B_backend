@@ -29,7 +29,6 @@ public class AccountView {
 //            System.out.println("계좌번호는 숫자로 입력해주세요.");
 //            return;
 //        }
-            Controller.getInstance().계좌생성(계좌주, 계좌번호, 초기입금액);
             if(Controller.getInstance().계좌생성(계좌주, 계좌번호, 초기입금액)){
                 System.out.println("계좌가 생성되었습니다.");
             }else{

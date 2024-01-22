@@ -20,5 +20,8 @@ public class Step3 {
         myCar.price = 100;
         myCar.setPrice(myCar.getPrice() + 100);
         System.out.println(myCar.price);
+        System.out.println("Step3.main");
     }
 }
+
+
