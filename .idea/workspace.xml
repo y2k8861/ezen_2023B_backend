@@ -5,27 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd4426e-f027-4090-94b1-b83a0d8cba0d" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/day16/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/Audio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/RemoteControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/Step1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/Tv2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day16/정리" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Archor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Assasin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Newbe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/인터페이스구현/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Archor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Assasin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Newbe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/팀과제/팀과제4/클래스상속/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day17/Step1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day17/Step2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day17/Step3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/mysql-connector-j-8.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/step3.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/step4.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/정리" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/step2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/step2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ezen_2023B_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ezen_2023B_backend.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,13 +66,14 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/504/Desktop/ezen_2023B_backend/src/팀과제/팀과제4/인터페이스구현",
     "onboarding.tips.debug.path": "C:/Users/504/Desktop/ezen_2023B_backend/ezen_2023B_backend/src/Main.java",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "라이브러리",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "inlay.hints",
     "애플리케이션.Application.executor": "Run",
     "애플리케이션.BankApplication.executor": "Run",
@@ -131,6 +123,8 @@
     "애플리케이션.day14.Step2.executor": "Run",
     "애플리케이션.day14.Step3.executor": "Run",
     "애플리케이션.day16.Step1.executor": "Run",
+    "애플리케이션.day17.Step1.executor": "Run",
+    "애플리케이션.day17.Step3.executor": "Run",
     "애플리케이션.과제.과제1.ex4.Level1_4.executor": "Run",
     "애플리케이션.과제.과제6.MemberSys.executor": "Run",
     "애플리케이션.팁별과제 (1).executor": "Run",
@@ -142,10 +136,12 @@
       <recent name="C:\Users\504\Desktop\ezen_2023B_backend\src\팀과제\팀과제4\인터페이스구현" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\504\Desktop\ezen_2023B_backend\src\DB" />
+      <recent name="C:\Users\504\Desktop\ezen_2023B_backend\src" />
       <recent name="C:\Users\504\Desktop\ezen_2023B_backend\ezen_2023B_backend\src\팀과제\팀과제2" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Game">
+  <component name="RunManager" selected="애플리케이션.day17.Step3">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="팀과제.팀과제4.클래스상속.Game" />
       <module name="ezen_2023B_backend" />
@@ -159,38 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day15.Step1" />
+    <configuration name="Step2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.Step2" />
       <module name="ezen_2023B_backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Step3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day15.Step3" />
-      <module name="ezen_2023B_backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day14.Step3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day14.Step3" />
-      <module name="ezen_2023B_backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day14.*" />
+          <option name="PATTERN" value="day17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,13 +181,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day17.Step1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.Step1" />
+      <module name="ezen_2023B_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day17.Step3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.Step3" />
+      <module name="ezen_2023B_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.day17.Step3" />
+        <item itemvalue="애플리케이션.Step2" />
+        <item itemvalue="애플리케이션.day17.Step1" />
         <item itemvalue="애플리케이션.Game" />
         <item itemvalue="애플리케이션.day16.Step1" />
-        <item itemvalue="애플리케이션.Step3" />
-        <item itemvalue="애플리케이션.Step1" />
-        <item itemvalue="애플리케이션.day14.Step3" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705914219405</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1705998109303</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1705998109303</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
