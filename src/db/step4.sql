@@ -88,3 +88,9 @@ delete from table1 where 데이터필드1 = 5; 		# 조건식 : 만약에 데이�
     # 1. 테이블의 데이터 모두 삭제 / 추후에 취소 불가능
 truncate table table1;
 
+use test5;
+drop table if exists members;
+create table members(name varchar(30));
+select * from members;
+-- DML은 자바에서
+#1. 
