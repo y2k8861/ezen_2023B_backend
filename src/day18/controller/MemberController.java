@@ -28,6 +28,10 @@ public class MemberController {
 
     int loginMno = 0;
 
+    public int getLoginMno() {
+        return loginMno;
+    }
+
     // 2-1. 로그인
     public boolean login(MemberDto memberDto){
         boolean result = MemberDao.getInstantce().login(memberDto);

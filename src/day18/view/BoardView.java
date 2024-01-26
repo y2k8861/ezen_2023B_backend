@@ -3,6 +3,7 @@ package day18.view;
 import day18.controller.BoardController;
 import day18.controller.MemberController;
 import day18.model.dto.BoardDto;
+import day18.model.dto.CategoryDto;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 public class BoardView {
     private BoardView(){}
     private static BoardView boardView = new BoardView();
-    public static BoardView getInstantce(){return boardView;}
+    public static BoardView getInstance(){return boardView;}
 
     // 입력객체
     Scanner scanner = MainView.getInstance().scanner;
@@ -23,11 +24,11 @@ public class BoardView {
             // 추후에 현재 게시물 출력 메소드가 들어갈 자리
             // 모든 글 출력 시작
             ArrayList<BoardDto> boardDtos = new ArrayList<>();  // 1.BoardDot 객체를 저장할 배열 생성
-            boardDtos = BoardController.getInstantce().boardView(); // 2.BoardController에서 BoardView메소드 실행 --> BoardController 이동 ->
+            boardDtos = BoardController.getInstance().boardView(); // 2.BoardController에서 BoardView메소드 실행 --> BoardController 이동 ->
             System.out.printf("%5s \t %-10s \t %-10s \t %-15s \t %-10s \t %-10s\n","게시물번호","카테고리","작성자","작성일","조회수","제목");
             for(BoardDto i : boardDtos){    // 12. boardView()에서 호출한 배열을 향상된 포문으로 돌린다.
-                String writer= BoardController.getInstantce().findId(i.getMno());   // 13. mno를 이용한 해당 아이디 찾기
-                String category = BoardController.getInstantce().findCategory(i.getCno());  // 14. cno를 이용한 해당 카테고리 명찾기 찾기
+                String writer= BoardController.getInstance().findId(i.getMno());   // 13. mno를 이용한 해당 아이디 찾기
+                String category = BoardController.getInstance().findCategory(i.getCno());  // 14. cno를 이용한 해당 카테고리 명찾기 찾기
                 String date = i.getBdate().split(" ")[0];   // 15. datetime 타입은 시간도 같이 저장되서 시간을 짜르고 날짜만 불러오기
                 System.out.printf("%-8d \t %-10s \t %-10s \t %-15s \t %-10d \t %-10s\n",i.getBno(),category,writer,date,i.getBview(),i.getBtitle());    // 16. 배열에서 한 객체씩 출력
             }
@@ -36,7 +37,25 @@ public class BoardView {
             System.out.println("1.글쓰기 2.글보기 3.로그아웃");
             System.out.print("선택>"); int ch = scanner.nextInt();
 
-            if(ch == 1){}
+            if(ch==1){
+                ArrayList<CategoryDto> categoryDtos = new ArrayList<>();
+                categoryDtos = BoardController.getInstance().cateList();
+                for(CategoryDto i : categoryDtos){  // 카테고리DB에서 categoryDto들을 가져온 배열을 하나씩 출력해서 보여주기
+                    System.out.printf("%d.%s ",i.getCno(),i.getCname());
+                }
+//                System.out.println("1.자바 2.C언어"); // 샘플
+                System.out.print("카테고리 선택 > "); int category = scanner.nextInt();
+                scanner.nextLine();
+                System.out.print("글 제목 : "); String boardtitle = scanner.nextLine();
+                System.out.print("글 내용 : "); String boardcontents = scanner.nextLine();
+                // 입력받은 값 4개 dto에 담아서 컨트롤러로 전달
+                BoardDto boardDto = new BoardDto( category, MemberController.getInstance().getLoginMno(), boardtitle, boardcontents );
+                if(BoardController.getInstance().boardWrite(boardDto)==0){
+                    System.out.println("글쓰기 성공");
+                } else if (BoardController.getInstance().boardWrite(boardDto)==1) {
+                    System.out.println("글쓰기 실패");
+                }
+            }
             else if(ch == 2) {}
             else if(ch == 3) {
                 System.out.println("<안내> 로그아웃이 되었습니다.");
