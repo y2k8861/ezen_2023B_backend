@@ -18,7 +18,7 @@ public class MemberDao extends Dao {
             // 1. SQL 작성
             String sql = "insert into member(mid,mpw,mphone) values(?,?,?)";
             // 2. SQL 기재
-            ps = connection.prepareStatement(sql);
+            ps = conn.prepareStatement(sql);
             // ? 매개변수 대입
             ps.setString(1, memberDto.getMid());
             ps.setString(2, memberDto.getMpw());
@@ -39,7 +39,7 @@ public class MemberDao extends Dao {
             // 1. SQL 작성
             String sql = "select mid from member where mid = ?;";
             // 2. SQL 기재
-            ps = connection.prepareStatement(sql);
+            ps = conn.prepareStatement(sql);
             ps.setString(1,mid);    // sql문법내 첫번째 ?에 mid 변수 값 대입
 
             // 3. SQL 실행
@@ -61,7 +61,7 @@ public class MemberDao extends Dao {
         try {
             // 1. SQL 작성한다
             String sql = "select * from member where mid = ? and mpw = ?;";
-            ps = connection.prepareStatement(sql);
+            ps = conn.prepareStatement(sql);
 
             // 2. SQL 기재한다.
             // ? 매개변수 대입
@@ -90,7 +90,7 @@ public class MemberDao extends Dao {
             String sql = "select mno from member where mid = ?;";
 
             // 2. SQL 기재한다.
-            ps = connection.prepareStatement(sql);
+            ps = conn.prepareStatement(sql);
             ps.setString(1,mid);
 
             // 3. SQL 실행한다.
