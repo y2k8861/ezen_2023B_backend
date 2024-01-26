@@ -49,7 +49,7 @@ public class MemberView {
         if(result) {
             System.out.println("<안내> 로그인 성공");
             // 게시판 화면으로 이동 예정
-            BoardView.getInstantce().run();
+            BoardView.getInstance().run();
         } else {
             System.out.println("<안내> 로그인 실패");
         }
