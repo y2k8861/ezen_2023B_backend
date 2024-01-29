@@ -35,4 +35,9 @@ public class BoardController {
     public String findCategory(int num){
         return BoardDao.getInstance().findCategory(num);
     }
+
+    public BoardDto view(int num){ return BoardDao.getInstance().view(num);}
+    public boolean dropBoard(int num){ return BoardDao.getInstance().dropBoard(num);}
+
+
 }

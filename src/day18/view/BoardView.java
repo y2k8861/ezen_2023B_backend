@@ -56,7 +56,51 @@ public class BoardView {
                     System.out.println("글쓰기 실패");
                 }
             }
-            else if(ch == 2) {}
+            else if(ch == 2) {
+                System.out.println("볼 번호 입력");
+                int ch2= scanner.nextInt();
+                BoardDto boardDto = BoardController.getInstance().view(ch2);
+                if (boardDto != null){
+                    //findId(int num): 가져온 mno를 다시 mid찾기 함수에 넣어서 String mid를 가져옴
+                    //findCategory(int num) :가져온 cno를 다시 cname 찾기 함수에 넣어서 String cname 가져옴
+                    System.out.println("==========ezen 게시물==============");
+                    System.out.println("게시물번호"+boardDto.getBno()+"      "+"작성자: "+BoardController.getInstance().findId(boardDto.getMno())+"   조회수 : "+boardDto.getBview());
+                    System.out.println("카테고리 :"+BoardController.getInstance().findCategory(boardDto.getCno())+" 제목 :"+boardDto.getBtitle());
+                    System.out.println("내용 :"+boardDto.getBcontents());
+                    System.out.println("------------------------------------");
+                    System.out.println("1.뒤로가기 2.수정 3.삭제 4.댓글쓰기");
+                    System.out.println("선택>");
+                    int ch3 = scanner.nextInt();
+                    if(ch3==1){}
+                    else if(ch3==2){
+                        if(boardDto.getMno() == MemberController.getInstance().getLoginMno()){
+                            System.out.println("수정함수 실행 (추후예정)");
+                        }
+                        else{
+                            System.out.println("수정 권한이 없습니다.");
+                        }
+                    }
+                    else if(ch3==3){
+                        if(boardDto.getMno() == MemberController.getInstance().getLoginMno()){
+                            System.out.println("삭제함수 실행");
+                            BoardController.getInstance().dropBoard(boardDto.getBno());
+                        }
+                        else{
+                            System.out.println("삭제 권한이 없습니다.");
+                        }
+                    }
+                    else if(ch3==4){
+                        System.out.println("현재 구현되지 않은 기능입니다");
+                    }
+                    else{
+                        System.out.println("잘못된 접근입니다");
+                    }
+
+                }
+                else {
+                    System.out.println("없는 번호입니다");
+                }
+            }
             else if(ch == 3) {
                 System.out.println("<안내> 로그아웃이 되었습니다.");
                 MemberController.getInstance().logout(); // 회원컨드롤러에 로그아웃 처리 요청
