@@ -38,3 +38,49 @@ select mno from member where mid = 'qwer';
 
 SHOW DATABASES;
 
+use java;
+
+drop table if exists category;
+create table category(
+	cno int auto_increment,
+    cname varchar(20) not null unique,
+    primary key(cno)
+);
+
+drop table if exists board;
+create table board(
+	cno int not null,
+    mno int not null,
+    bno int auto_increment,
+    btitle varchar(30),
+    bcontents longtext,
+    bdate datetime default now(),
+    bview bigint default 0,
+    primary key(bno),
+    foreign key(cno) references category(cno),
+    foreign key(mno) references member(mno)
+);
+
+drop table if exists comment;
+create table comment(
+	bno int not null,
+    mno int not null,
+    cono int auto_increment,
+    cocontents varchar(100),
+    primary key(cono),
+    foreign key(bno) references board(bno),
+    foreign key(mno) references member(mno)
+);
+
+insert into category(cname) values('자바');
+insert into category(cname) values('C언어');
+insert into category(cname) values('어셈블리');
+
+insert into board(cno, mno, btitle, bcontents ) values(1,1,'안녕하세요.','이것은 1번 게시물의 내용입니다.');
+insert into board(cno, mno, btitle, bcontents ) values(2,1,'안녕하세요.','이것은 2번 게시물의 내용입니다.');
+insert into board(cno, mno, btitle, bcontents ) values(1,2,'안녕하세요.','이것은 3번 게시물의 내용입니다.');
+insert into board(cno, mno, btitle, bcontents ) values(2,2,'안녕하세요.','이것은 4번 게시물의 내용입니다.');
+delete from board;
+select * from category order by cno;
+select * from board order by bno;
+select * from comment;
